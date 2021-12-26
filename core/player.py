@@ -11,8 +11,8 @@ class Player:
         self.y = y
         self.speed = speed
 
-    def DrawSprite(self):
-        Window.window.blit(pygame.image.load(self.sprite_img), (self.x, self.y))
+    def DrawSprite(self, window):
+        window.blit(pygame.image.load(self.sprite_img), (self.x, self.y))
     
     def MoveSprite(self, direction):
         if direction == 1:

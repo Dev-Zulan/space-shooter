@@ -5,7 +5,7 @@ class Colour:
             'black': (0, 0, 0)
         }
 
-    def colour_RGB(self, colour):
+    def colour_RGB(self, colour) -> dict:
         return self._colour["{}".format(colour).lower()]
 
 Colour = Colour()

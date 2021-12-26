@@ -18,6 +18,9 @@ class Window:
         pygame.display.set_caption(self.caption)
 
     
+    def GetWindow(self) -> None:
+        return self.window
+    
     def GetWindowResolution(self) -> tuple:
         return (self.width, self.height)
 

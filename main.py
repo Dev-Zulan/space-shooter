@@ -24,7 +24,7 @@ def main():
         if KEY_RIGHT: Player.MoveSprite(4)
         
         Window.DrawWindow()
-        Player.DrawSprite()
+        Player.DrawSprite(Window.GetWindow())
         Window.RefreshWindow()
         
     pygame.QUIT
